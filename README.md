@@ -1,7 +1,7 @@
 # weather-dashboard
 
-## Discription: 
-I was tasked with creating a timed quiz from scratch. The quiz should be multiple choice JavaScript fundamentals and should also store high score, so the user can compare to others.
+## Description: 
+I was tasked with creating a weather dashboard from scratch. 
 
 ## Installation:
 Open in browser or click on the following link. https://lunaz13.github.io/coding-quiz/
@@ -34,6 +34,7 @@ See demo and instructions below.
 * HTML
 * CSS
 * JavaScript
+* OpenWeather Api
 
 
 ## Credits
