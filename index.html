@@ -9,7 +9,7 @@
     <title>Weather Dashboard</title>
 </head>
 
-<body>
+<body class="bg-info">
     <header class="navbar navbar-primary bg-primary">
         <h1 class="display-4 text-light mx-auto">Weather Dashboard</h1>
     </header>
@@ -29,8 +29,8 @@
         
         
         <div class="col-lg-8">
-            <div class="row border">
-                <div class="card-body p-6 mt-4" id="current-weather">
+            <div class="row">
+                <div class="card-body p-6 mt-4 text" id="current-weather">
                     <h5 id="city"></h5>
                     <div id="weather-conditions"></div>
                 </div>
@@ -42,7 +42,7 @@
     <div class="row mt-4" id="five-day-cast">
         <div class="col p-6 mt-4">
             <h3>5-Day Forecast</h3>
-            <div class="row mt-3 rounded text-dark justify-content-around" id="fiveday-container"></div>
+            <div class="row mt-3 h-100 rounded-lg text-dark justify-content-around" id="fiveday-container"></div>
         </div>
     </div>
   </div>   

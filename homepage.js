@@ -100,9 +100,9 @@ var displayFiveDay = function(weather, cityName) {
         var card = document.createElement("div");
         card.classList.add("card")
 
-        // var weatherIcon = document.createElement("img")
-        // weatherIcon.setAttribute("src", "https://openweathermap.org/img/wn/" + weather.weather[0].icon + ".png");
-        // cityEl.appendChild(weatherIcon);
+        var weatherIcon = document.createElement("img")
+        weatherIcon.setAttribute("src", "https://openweathermap.org/img/wn/" + weather.weather[0].icon + ".png");
+        fiveDayDiv.appendChild(weatherIcon);
         
         var temperatureEl = document.createElement("span");
         temperatureEl.textContent = "Temperature: " + weather.daily[i].temp.day + "°F";
