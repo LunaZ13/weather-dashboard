@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <div class="row p-4 mt-4">
             <div class="col-lg-4 bg-light">
-                <h4>Search for a city:</h4>
+                <h4 class="mt-2">Search for a city:</h4>
                 <form class="form-inline mb-3 p-3">
                     <input id="city-input"class="form-control" type="text" placeholder="Enter city name...">
                     <button id="search-button" class="btn btn-primary" type="button">
@@ -31,9 +31,9 @@
             </div>
         
         <!--current weather section-->
-        <div class="col-lg-8">
+        <div class="container col">
             <div class="row">
-                <div class="card-body p-4 mt-4 text" id="current-weather">
+                <div class="card-body p-4 mt-4" id="current-weather">
                     <h2 class="text-light p-3" id="city"></h2>
                     <div id="weather-conditions"></div>
                 </div>
@@ -42,9 +42,9 @@
     </div>
     
     <!--five day weather cast section-->
-    <div class="row mt-4" id="five-day-cast">
+    <div class="row mt-4 mb-4" id="five-day-cast">
         <div class="col p-6 mt-4">
-            <h3>5-Day Forecast</h3>
+            <h2 class="p-3 text-light">5-Day Forecast</h2>
             <div class="row mt-3 h-100vh rounded-lg text-dark justify-content-around" id="fiveday-container"></div>
         </div>
     </div>
