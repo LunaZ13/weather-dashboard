@@ -32,7 +32,7 @@ See demo and instructions below.
 
 ## Built With:
 * HTML
-* CSS
+* Bootstrap Library
 * JavaScript
 * OpenWeather Api
 

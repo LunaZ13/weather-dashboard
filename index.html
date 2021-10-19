@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--meta tags and stylesheets-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
 </head>
 
 <body class="bg-info">
+    <!--header-->
     <header class="navbar navbar-primary bg-primary">
         <h1 class="display-4 text-light mx-auto">Weather Dashboard</h1>
     </header>
-
+    <!--city search form container-->
     <div class="container-fluid">
-        <div class="row mt-4">
+        <div class="row p-4 mt-4">
             <div class="col-lg-4 bg-light">
                 <h4>Search for a city:</h4>
                 <form class="form-inline mb-3 p-3">
@@ -24,30 +26,32 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
+                <!--unordered list of searched cities-->
                 <ul class="list-group" id="searched-cities"></ul>
             </div>
         
-        
+        <!--current weather section-->
         <div class="col-lg-8">
             <div class="row">
-                <div class="card-body p-6 mt-4 text" id="current-weather">
-                    <h5 id="city"></h5>
+                <div class="card-body p-4 mt-4 text" id="current-weather">
+                    <h2 class="text-light p-3" id="city"></h2>
                     <div id="weather-conditions"></div>
                 </div>
             </div>
         </div>
     </div>
     
-
+    <!--five day weather cast section-->
     <div class="row mt-4" id="five-day-cast">
         <div class="col p-6 mt-4">
             <h3>5-Day Forecast</h3>
-            <div class="row mt-3 h-100 rounded-lg text-dark justify-content-around" id="fiveday-container"></div>
+            <div class="row mt-3 h-100vh rounded-lg text-dark justify-content-around" id="fiveday-container"></div>
         </div>
     </div>
   </div>   
-
+    <!--script links-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="homepage.js"></script>
 </body>
 </html>
