@@ -1,39 +1,32 @@
-# weather-dashboard
+# Weather Dashboard
 
 ## Description: 
-I was tasked with creating a weather dashboard from scratch. 
+I was tasked with creating a weather dashboard from scratch. The weather dashboard will display current and future conditions for searched city. Cities that are searched are added to a search history, this way the user can always go back and check the weather on past searched history.
 
 ## Installation:
-Open in browser or click on the following link. https://lunaz13.github.io/coding-quiz/
+Open in browser or click on the following link. https://lunaz13.github.io/weather-dashboard/
 
 ## Usage:
 See demo and instructions below.
 
-![Coding Quiz](https://user-images.githubusercontent.com/86627336/134993455-a92119de-ec28-4110-b993-56c10f08edc9.gif)
+![Weather Dashboard](https://user-images.githubusercontent.com/86627336/137847726-4a989139-f491-454d-80f9-e5211c72ecc2.gif)
 
 
-## Instructions:
-1. Click the "Start Quiz" button
-    * The timer will start to run from 75 seconds.
-    * The user will be presented with a series of questions.
+## Features:
+1. Click in the input text area and type in desired city, then click on the search button.
+    * The city will be added underneath to a list.
+    * The city conditions will be displayed to the right, as well as a five day forecast below.
+    * The weather conditions will include; temperature, humidity, and wind speed.
 
-2. Questions Section
-    * A series of multiple choice questions will appear.
-    * If the questions is answered incorrectly, 10 seconds will deducted from the timer.
-    * After each question, the user will be alerted if they are "correct" or "wrong".
+2. Searched cities are saved to local storage so the user can always go back to past history. 
 
-3. When all questions have been answered or the timer runs out, the game is over.
-
-4. When the game is over, the user's score will be displayed. Then they can input their initials and click "submit" to save their score.
-
-5. The user can then click on the "view high scores" button to view their score and others.
-
-6. The user can then click on the "clear high score" button to clear the saved scores, or click on the "play again" button to restart the quiz.
+3. When the user refreshes the page, the searched cities will still be listed on the page.
 
 ## Built With:
 * HTML
 * Bootstrap Library
 * JavaScript
+* Moment.Js
 * OpenWeather Api
 
 

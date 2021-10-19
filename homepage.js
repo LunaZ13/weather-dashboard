@@ -73,7 +73,7 @@ var getWeather = function(cityName) {
 
     queryURL = queryURL + cityName + APIKEY + "&units=imperial";
     console.log(queryURL, cityName)
-
+    // call to api for response
     fetch(queryURL)
     .then(response => response.json())
     .then(response => {
@@ -116,6 +116,7 @@ var displayFiveDay = function(weather, cityName) {
 
         var formattedDate = document.createElement("h3");
         formattedDate.textContent = moment.unix(weather.daily[i].dt).format("MM/DD/YYYY");
+        formattedDate.classList = "text-center"
         card.appendChild(formattedDate);
         
         var weatherIcon = document.createElement("img")
@@ -125,17 +126,17 @@ var displayFiveDay = function(weather, cityName) {
         
         var temperatureEl = document.createElement("span");
         temperatureEl.textContent = "Temperature: " + weather.daily[i].temp.day + "°F";
-        temperatureEl.classList.add("card-title") 
+        temperatureEl.classList.add("card-title", "p-2") 
         card.appendChild(temperatureEl);
 
         var humidityEl = document.createElement("span");
         humidityEl.textContent = "Humidity: " + weather.daily[i].humidity + "%";
-        humidityEl.classList.add("card-title")
+        humidityEl.classList.add("card-title", "p-2")
         card.appendChild(humidityEl);
 
         var windSpeedEl = document.createElement("span");
         windSpeedEl.textContent = "Wind Speed: " + weather.daily[i].wind_speed + "MPH";
-        windSpeedEl.classList.add("card-title")
+        windSpeedEl.classList.add("card-title", "p-2")
         card.appendChild(windSpeedEl);
 
         fiveDayDiv.appendChild(card)
